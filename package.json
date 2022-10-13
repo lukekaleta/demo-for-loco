@@ -6,9 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lng:add": "lingui add-locale",
+    "lng:extract": "lingui extract",
+    "lng:compile": "lingui compile",
+    "lng:refresh": "yarn lng:up:cs && yarn lng:down:cs && yarn lng:down:en && yarn lng:down:de && yarn lng:down:es && yarn lng:extract && yarn lng:compile",
+    "lng:up:cs": "curl 'https://localise.biz/api/import/po?index=id&locale=cs&ignore-existing=true&tag-new=new&tag-absent=deprecated&untag-all=deprecated' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: --data-binary @locales/cs/messages.po",
+    "lng:up:en": "curl 'https://localise.biz/api/import/po?index=id&locale=en&ignore-existing=true&tag-new=new&tag-absent=deprecated&untag-all=deprecated' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: --data-binary @locales/en/messages.po",
+    "lng:up:de": "curl 'https://localise.biz/api/import/po?index=id&locale=de&ignore-existing=true&tag-new=new&tag-absent=deprecated&untag-all=deprecated' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: --data-binary @locales/de/messages.po",
+    "lng:up:es": "curl 'https://localise.biz/api/import/po?index=id&locale=es&ignore-existing=true&tag-new=new&tag-absent=deprecated&untag-all=deprecated' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: --data-binary @locales/es/messages.po",
+    "lng:down": "yarn lng:down:cs && yarn lng:down:en && yarn lng:down:es && yarn lng:down:sk",
+    "lng:down:cs": "curl 'https://localise.biz/api/export/locale/cs.po?index=id&order=id' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: -o ./locales/cs/messages.po",
+    "lng:down:en": "curl 'https://localise.biz/api/export/locale/en.po?index=id&order=id&fallback=cs' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: -o ./locales/en/messages.po",
+    "lng:down:de": "curl 'https://localise.biz/api/export/locale/de.po?index=id&order=id&fallback=cs' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: -o ./locales/de/messages.po",
+    "lng:down:es": "curl 'https://localise.biz/api/export/locale/es.po?index=id&order=id&fallback=cs' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: -o ./locales/es/messages.po"
   },
   "dependencies": {
+    "@lingui/core": "^3.14.0",
     "dayjs": "^1.10.4",
     "i18next": "^19.8.4",
     "i18next-browser-languagedetector": "^6.0.1",
@@ -20,7 +34,10 @@
     "react-i18next": "^11.8.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@lingui/cli": "^3.14.0",
+    "@lingui/macro": "^3.14.0",
     "@types/react": "17.0.19",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "autoprefixer": "^10.3.2",

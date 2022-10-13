@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"Czech":"Tschechisch","English":"Englisch","German":"Deutschland","Hello world":"Hallo Welt!","Spain":"Spanien"}};

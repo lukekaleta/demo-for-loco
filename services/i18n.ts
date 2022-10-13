@@ -3,12 +3,18 @@ import { initReactI18next } from 'react-i18next'
 import Backend from 'i18next-xhr-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
-const translationCS = require('../locales/cs/cs.json')
-const translationEN = require('../locales/en/en.json')
+import { Language } from "types"
+
+const translationCS = require('../locales/cs/messages')
+const translationEN = require('../locales/en/messages')
+const translationDE = require('../locales/de/messages')
+const translationES = require('../locales/es/messages')
 
 const resources = {
-  cs: { translation: translationCS },
-  en: { translation: translationEN },
+  cs: { translation: translationCS.messages },
+  en: { translation: translationEN.messages },
+  de: { translation: translationDE.messages },
+  es: { translation: translationES.messages },
 }
 
 i18n
@@ -17,7 +23,7 @@ i18n
   .use(LanguageDetector)
   .init({
     resources,
-    fallbackLng: 'cs',
+    fallbackLng: Language.Czech,
     // whitelist: Resources,
     // debug: true,
     detection: {
