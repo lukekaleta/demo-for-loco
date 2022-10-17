@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: demo-for-loco\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-13 10:23+0200\n"
-"PO-Revision-Date: 2022-10-13 20:07+0200\n"
+"PO-Revision-Date: 2022-10-17 10:40+0200\n"
 "Last-Translator: Lukáš Kaleta\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
@@ -33,6 +33,10 @@ msgstr ""
 #~ msgid "Hello world"
 #~ msgstr "Ahoj světe!"
 
+#: loco:634d02aba4d4a0359c07fe02
+#~ msgid "Maybe some application"
+#~ msgstr "Možná nějaká aplikace"
+
 #: loco:6347dcba5851a01f4e271ce3
 #~ msgid "Spanish"
 #~ msgstr "Španělšina"
@@ -46,3 +50,11 @@ msgstr ""
 #~ msgctxt "This is text with variable"
 #~ msgid "This is text with variable NUMBER"
 #~ msgstr "Tohle je text s proměnnou <0>number</0>."
+
+#: loco:634d13d3d85eab7a7e00a543
+#~ msgid "This text is really long and I dont know if it is translated really correctly in all languages"
+#~ msgstr "Tento text je opravdu dlouhý a nevím, jestli je přeložen opravdu správně do všech jazyků."
+
+#: loco:634d14d247d04f35f55dbc72
+#~ msgid "This text is translated only in english and germany"
+#~ msgstr ""

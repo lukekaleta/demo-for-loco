@@ -1,25 +1,26 @@
-import { LanguageSwitcher } from "components/LanguageSwitcher"
-import { Trans, useTranslation } from "react-i18next"
+import { Typography } from "components/Typography"
+import { useTranslation } from "react-i18next"
 
 function Example() {
   const { t } = useTranslation()
 
-  const text = 0
-
   return (
     <div>
-      <div>
-        <LanguageSwitcher />
-      </div>
-      <h1>
+      <Typography variant="h1" className="text-white">
         {t`Hello world`}
-      </h1>
-      <h2>
+      </Typography>
+      <Typography variant="h2" className="text-white mt-4">
         {t`This is normal example text`}
-      </h2>
-      <h2>
-        <Trans id="This is text with variable NUMBER"/>
-      </h2>
+      </Typography>
+      <Typography variant="body1" className="text-white mt-10">
+        {t`This text is really long and I dont know if it is translated really correctly in all languages`}
+      </Typography>
+      <Typography variant="body1" className="text-white mt-10">
+        {t`This text is translated only in english and germany`}
+      </Typography>
+      <Typography variant="body1" className="text-white mt-10">
+        {t`This text is missing in all languages`}
+      </Typography>
     </div>
   )
 }
