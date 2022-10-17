@@ -1,1 +1,1 @@
-/*eslint-disable*/module.exports={messages:{"Czech":"Tschechisch","English":"Englisch","German":"Deutschland","Hello world":"Hallo Welt!","Spain":"Spanien"}};
+/*eslint-disable*/module.exports={messages:{"Czech":"Tschechisch","English":"Englisch","German":"Deutschland","Hello world":"Hallo Welt!","Spanish":"Spanien","This is normal example text":"Dies ist ein normaler mustertext.","This is text with variable NUMBER":"Dies ist text mit variable <0>number</0>."}};

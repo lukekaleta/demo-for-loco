@@ -4,7 +4,7 @@ import { Example } from "components/Example";
 
 const Home: NextPage = () => {
   return (
-    <div className="text-3xl">
+    <div>
       <Example />
     </div>
   )
