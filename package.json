@@ -10,7 +10,7 @@
     "lng:add": "lingui add-locale",
     "lng:extract": "lingui extract",
     "lng:compile": "lingui compile",
-    "lng:refresh": "yarn lng:up:cs && yarn lng:down:cs && yarn lng:down:en && yarn lng:down:de && yarn lng:down:es && yarn lng:extract && yarn lng:compile",
+    "lng:refresh": "yarn lng:up:en && yarn lng:down:cs && yarn lng:down:en && yarn lng:down:de && yarn lng:down:es && yarn lng:extract && yarn lng:compile",
     "lng:up:cs": "curl 'https://localise.biz/api/import/po?index=id&locale=cs&ignore-existing=true&tag-new=new&tag-absent=deprecated&untag-all=deprecated' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: --data-binary @locales/cs/messages.po",
     "lng:up:en": "curl 'https://localise.biz/api/import/po?index=id&locale=en&ignore-existing=true&tag-new=new&tag-absent=deprecated&untag-all=deprecated' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: --data-binary @locales/en/messages.po",
     "lng:up:de": "curl 'https://localise.biz/api/import/po?index=id&locale=de&ignore-existing=true&tag-new=new&tag-absent=deprecated&untag-all=deprecated' -u xfUBy_6hCT4EN89bsnOZ6wtP5uh-L2mgi: --data-binary @locales/de/messages.po",

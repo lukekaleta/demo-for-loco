@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: demo-for-loco\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-13 10:23+0200\n"
-"PO-Revision-Date: 2022-10-17 10:40+0200\n"
+"PO-Revision-Date: 2022-10-17 11:54+0200\n"
 "Last-Translator: Lukáš Kaleta\n"
 "Language-Team: English (UK)\n"
 "Language: en-GB\n"
@@ -55,6 +55,7 @@ msgstr ""
 #~ msgid "This text is really long and I dont know if it is translated really correctly in all languages"
 #~ msgstr "This text is really long and I don't know if it is translated really correctly in all languages"
 
+#. Here can be image URL: https://www.google.com
 #: loco:634d14d247d04f35f55dbc72
 #~ msgid "This text is translated only in english and germany"
 #~ msgstr "This text is translated only in English and Germany."
